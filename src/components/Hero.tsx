@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profilePic from "@/assets/profile-pic.jpeg";
 
 export const Hero = () => {
   return (
@@ -54,11 +55,12 @@ export const Hero = () => {
           <div className="flex justify-center animate-fade-in">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl"></div>
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-primary/30 overflow-hidden bg-gradient-to-br from-secondary to-card">
-                {/* Placeholder for profile picture */}
-                <div className="w-full h-full flex items-center justify-center text-primary text-8xl font-bold">
-                  SK
-                </div>
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-primary/30 overflow-hidden">
+                <img 
+                  src={profilePic} 
+                  alt="Sarthak Kasturi" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
