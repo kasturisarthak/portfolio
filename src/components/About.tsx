@@ -19,13 +19,13 @@ export const About = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6 text-muted-foreground leading-relaxed animate-fade-in">
             <p>
-              Sarthak Kasturi is an ML Engineer passionate about building resilient, ethically
-              aligned AI systems that drive measurable impact. With expertise spanning machine
-              learning, data engineering, and cloud automation, he has designed and deployed
-              scalable AI pipelines handling over 10,000 real-time events daily.
+              I'm an ML Engineer passionate about building resilient, ethically aligned AI systems
+              that drive measurable impact. With expertise spanning machine learning, data
+              engineering, and cloud automation, I've designed and deployed scalable AI pipelines
+              handling over 10,000 real-time events daily.
             </p>
             <p>
-              His work has reduced operational waste and false positives across enterprise systems,
+              My work has reduced operational waste and false positives across enterprise systems,
               delivering tangible business value while maintaining high ethical standards in AI
               development.
             </p>

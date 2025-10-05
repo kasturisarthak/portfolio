@@ -53,7 +53,7 @@ export const Experience = () => {
     <section id="experience" className="section-padding">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-2">
-          <span className="text-primary font-mono text-xl">03.</span> Experience
+          <span className="text-primary font-mono text-xl">02.</span> Experience
         </h2>
         <div className="w-20 h-0.5 bg-primary mb-8"></div>
 

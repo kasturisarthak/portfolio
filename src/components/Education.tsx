@@ -19,10 +19,10 @@ const education = [
 
 export const Education = () => {
   return (
-    <section className="section-padding bg-card/30">
+    <section id="education" className="section-padding bg-card/30">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-2">
-          <span className="text-primary font-mono text-xl">02.</span> Education
+          <span className="text-primary font-mono text-xl">03.</span> Education
         </h2>
         <div className="w-20 h-0.5 bg-primary mb-8"></div>
 

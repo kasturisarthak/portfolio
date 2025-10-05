@@ -14,6 +14,8 @@ const projects = [
       "Integrated Gemini API fallback ensuring 100% SKU coverage",
     ],
     tags: ["Azure", "DistilBERT", "DINOv2", "Gemini API", "MLOps"],
+    githubUrl: "", // Add your GitHub link here
+    liveUrl: "", // Add live demo link if available
     featured: true,
   },
   {
@@ -26,6 +28,8 @@ const projects = [
       "Created automated anomaly detection pipeline for real-time monitoring",
     ],
     tags: ["PyTorch", "TCN", "NARX", "Signal Processing", "Anomaly Detection"],
+    githubUrl: "", // Add your GitHub link here
+    liveUrl: "",
     featured: true,
   },
   {
@@ -38,6 +42,8 @@ const projects = [
       "Implemented publisher comparison and bias visualization",
     ],
     tags: ["LangChain", "Gemini API", "Streamlit", "NLP", "Sentiment Analysis"],
+    githubUrl: "", // Add your GitHub link here
+    liveUrl: "",
     featured: false,
   },
   {
@@ -50,6 +56,8 @@ const projects = [
       "Implemented word cloud analysis for sustainability keywords",
     ],
     tags: ["Streamlit", "Gemini API", "ESG", "Data Visualization", "Compliance"],
+    githubUrl: "", // Add your GitHub link here
+    liveUrl: "",
     featured: false,
   },
   {
@@ -62,6 +70,8 @@ const projects = [
       "Analyzed nationality and socio-economic trends across regions",
     ],
     tags: ["Python", "Bayesian Analysis", "PCA", "t-SNE", "Tableau"],
+    githubUrl: "", // Add your GitHub link here
+    liveUrl: "",
     featured: false,
   },
 ];
@@ -88,10 +98,28 @@ export const Projects = () => {
               <div className="flex items-center justify-between mb-4">
                 <FolderOpen className="text-primary" size={32} />
                 <div className="flex gap-2">
-                  <ExternalLink
-                    size={18}
-                    className="text-muted-foreground group-hover:text-primary transition-colors"
-                  />
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <Github size={18} />
+                    </a>
+                  )}
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <ExternalLink size={18} />
+                    </a>
+                  )}
                 </div>
               </div>
 
