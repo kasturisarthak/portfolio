@@ -45,11 +45,13 @@ export const Navigation = () => {
                 href={item.href}
                 className="text-muted-foreground hover:text-primary transition-colors font-mono text-sm"
               >
-                <span className="text-primary">0{index + 1}.</span> {item.label}
+                {item.label}
               </a>
             ))}
-            <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
-              Resume
+            <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10" asChild>
+              <a href="https://drive.google.com/file/d/1mlqvLlcSCgmQ79_FkJk1nnHlhfACt6Ao/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                Resume
+              </a>
             </Button>
           </div>
 
@@ -73,11 +75,18 @@ export const Navigation = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-muted-foreground hover:text-primary transition-colors font-mono text-sm"
                 >
-                  <span className="text-primary">0{index + 1}.</span> {item.label}
+                  {item.label}
                 </a>
               ))}
-              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10 w-fit">
-                Resume
+              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10 w-fit" asChild>
+                <a
+                  href="https://drive.google.com/file/d/1mlqvLlcSCgmQ79_FkJk1nnHlhfACt6Ao/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Resume
+                </a>
               </Button>
             </div>
           </div>

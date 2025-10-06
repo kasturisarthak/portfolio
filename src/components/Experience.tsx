@@ -1,4 +1,4 @@
-import { Briefcase, ExternalLink } from "lucide-react";
+import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
@@ -32,12 +32,12 @@ const experiences = [
     description: [
       "Designed Power BI dashboards tracking £1M CAPEX for solar rollout",
       "Built Python/SQL ETL pipelines tracking 25+ KPIs; reduced slippage 10%",
-      "Optimised vendor performance benchmarks for £800K/year savings",
+      "Optimised vendor performance benchmarks for £85K/year savings",
     ],
     tags: ["Python", "SQL", "Power BI", "ETL", "Data Analysis"],
   },
   {
-    title: "Supply Chain Optimisation Analyst",
+    title: "Data Analyst",
     company: "Punjab Eggs",
     period: "Jun 2019 – Dec 2019",
     description: [
@@ -52,8 +52,8 @@ export const Experience = () => {
   return (
     <section id="experience" className="section-padding">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold mb-2">
-          <span className="text-primary font-mono text-xl">02.</span> Experience
+        <h2 className="typ-section mb-2">
+          <span className="typ-kicker">02.</span> Experience
         </h2>
         <div className="w-20 h-0.5 bg-primary mb-8"></div>
 
@@ -66,23 +66,22 @@ export const Experience = () => {
             >
               <div className="flex items-start gap-4">
                 <div className="bg-primary/10 p-3 rounded-lg shrink-0">
-                  <Briefcase className="text-primary" size={24} />
+                  <Briefcase className="text-primary" size={28} />
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
                     <div>
-                      <h3 className="text-xl font-bold text-foreground">{exp.title}</h3>
-                      <p className="text-primary font-semibold flex items-center gap-2">
+                      <h3 className="typ-card-title">{exp.title}</h3>
+                      <p className="text-primary font-semibold flex items-center text-xl md:text-2xl">
                         {exp.company}
-                        <ExternalLink size={16} className="opacity-50" />
                       </p>
                     </div>
-                    <span className="text-sm text-muted-foreground font-mono">{exp.period}</span>
+                    <span className="typ-meta font-mono">{exp.period}</span>
                   </div>
 
                   <ul className="space-y-2 mb-4">
                     {exp.description.map((item, i) => (
-                      <li key={i} className="text-muted-foreground text-sm flex gap-2">
+                      <li key={i} className="typ-body text-muted-foreground flex gap-2">
                         <span className="text-primary shrink-0">▹</span>
                         <span>{item}</span>
                       </li>

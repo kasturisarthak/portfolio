@@ -53,24 +53,78 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    line-height: 1.7;
   }
 
   html {
     scroll-behavior: smooth;
+    /* Increase root font-size to scale all text (Tailwind uses rem) */
+    font-size: 18px; /* was browser default ~16px */
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply text-foreground font-bold;
+  /* Increase heading font sizes */
+  h1 {
+    font-size: 10rem; /* 56px */
+    line-height: 1.2;
   }
+
+  h2 {
+    font-size: 10rem; /* 44px */
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1.75rem; /* 28px */
+    line-height: 1.35;
+  }
+
+  h5 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.4;
+  }
+
+  h6 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.45;
+  }
+  /* Improve paragraph readability */
+  p {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.7;
+  }
+
 }
-
 @layer components {
+  /* Typography utilities for consistent sizing */
+  .typ-section {
+    @apply text-4xl md:text-5xl font-bold;
+  }
+  .typ-kicker {
+    @apply text-primary font-mono text-2xl md:text-3xl;
+  }
+  .typ-card-title {
+    @apply text-2xl md:text-3xl font-bold text-foreground;
+  }
+  .typ-title {
+    @apply text-2xl md:text-3xl font-bold text-foreground;
+  }
+  .typ-body {
+    @apply text-lg md:text-xl leading-relaxed;
+  }
+  .typ-meta {
+    @apply text-base md:text-lg text-muted-foreground;
+  }
   .section-padding {
     @apply py-20 px-6 md:px-12 lg:px-24;
   }
 
   .tech-badge {
-    @apply px-3 py-1 rounded-md bg-secondary/50 border border-primary/30 text-primary text-xs font-mono transition-all duration-300 hover:bg-primary/10 hover:border-primary/50;
+    @apply px-3 py-1 rounded-md bg-secondary/50 border border-primary/30 text-primary text-sm md:text-base font-mono transition-all duration-300 hover:bg-primary/10 hover:border-primary/50;
   }
 
   .link-hover {

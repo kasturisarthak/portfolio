@@ -5,7 +5,7 @@ const education = [
     degree: "MSc Data Science",
     institution: "University of Bristol",
     period: "2024 – 2025",
-    grade: "Distinction (expected)",
+    grade: "Distinction (Expected)",
     courses: "Visual and Text Analytics, Big Data Engineering, Statistics, Deep Learning",
   },
   {
@@ -21,8 +21,8 @@ export const Education = () => {
   return (
     <section id="education" className="section-padding bg-card/30">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold mb-2">
-          <span className="text-primary font-mono text-xl">03.</span> Education
+        <h2 className="typ-section mb-2">
+          <span className="typ-kicker">03.</span> Education
         </h2>
         <div className="w-20 h-0.5 bg-primary mb-8"></div>
 
@@ -38,11 +38,11 @@ export const Education = () => {
                   <GraduationCap className="text-primary" size={24} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-foreground mb-1">{edu.degree}</h3>
-                  <p className="text-primary font-semibold">{edu.institution}</p>
-                  <p className="text-sm text-muted-foreground mt-2">{edu.period}</p>
-                  <p className="text-sm text-muted-foreground">{edu.grade}</p>
-                  <p className="text-sm text-muted-foreground mt-3">{edu.courses}</p>
+                  <h3 className="typ-card-title mb-1">{edu.degree}</h3>
+                  <p className="text-primary font-semibold text-xl md:text-2xl">{edu.institution}</p>
+                  <p className="typ-meta mt-2">{edu.period}</p>
+                  <p className="typ-meta">{edu.grade}</p>
+                  <p className="typ-meta mt-3">{edu.courses}</p>
                 </div>
               </div>
             </div>

@@ -8,15 +8,16 @@ export const Hero = () => {
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
-            <p className="text-primary font-mono text-sm">Hi, my name is</p>
-            <h1 className="text-5xl md:text-7xl font-bold">Sarthak Kasturi</h1>
-            <h2 className="text-3xl md:text-5xl font-bold text-muted-foreground">
-              Machine Learning Engineer
+            <p className="typ-kicker">Hi, my name is</p>
+            <h1 className="typ-section">Sarthak Kasturi</h1>
+            <h2 className="typ-card-title text-muted-foreground">
+              Data Scientist
             </h2>
-            <p className="text-muted-foreground text-lg max-w-xl leading-relaxed">
-              ML Engineer with 3+ years of experience deploying production-grade AI systems across
-              finance, sustainability, and high-stakes domains. Proven record in Azure MLOps
-              pipelines, real-time data processing, and ethical AI solutions.
+            <p className="typ-body text-muted-foreground max-w-xl">
+            A mechanical engineer who accidentally fell in love with data. 
+            What began as tweaking a few Python scripts at work spiraled into full-blown AI experiments, 
+            and now I build systems that help humans and machines collaborate a little more smoothly every day.
+             I still love tinkering — only now my tools are transformers, not torque wrenches.
             </p>
             <div className="flex gap-4">
               <Button
@@ -25,7 +26,7 @@ export const Hero = () => {
                 className="border-primary text-primary hover:bg-primary/10"
                 asChild
               >
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/kasturisarthak" target="_blank" rel="noopener noreferrer">
                   <Github size={20} />
                 </a>
               </Button>
@@ -35,7 +36,7 @@ export const Hero = () => {
                 className="border-primary text-primary hover:bg-primary/10"
                 asChild
               >
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/sarthakkasturi/" target="_blank" rel="noopener noreferrer">
                   <Linkedin size={20} />
                 </a>
               </Button>
